@@ -1,0 +1,119 @@
+html,body, .main-container{
+    height: 100%;
+    background-color: #f03816;
+    margin: 0;
+}
+*{
+    font-family: 'Montserrat', sans-serif;
+    color: #f03816;
+}
+.main-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.tick{
+    position: absolute;
+    border: 2px solid black;
+    transform-origin: 0%;
+    left: 50%;
+}
+
+#sec-tick{
+    width: 160px;
+    border-color: #ffcdd2;
+}
+#min-tick{
+    width: 120px;
+    border-color: #f44336;
+}
+#hour-tick{
+    width: 90px;
+    border-color: #b71c1c;
+}
+.clock{
+    position: relative;
+    border-radius: 50%;
+    width: 400px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border: 20px solid rgb(223, 63, 45);
+}
+.box-shadow-3d{
+    box-shadow: 20px 40px 203px -70px rgba(0,0,0,1);
+}
+.clock-element{
+    height: fit-content;
+    position: absolute;
+}
+#one, #eleven {
+    top: 40px;
+}
+#two, #ten{
+    top: 100px;
+}
+#four , #eight{
+    bottom: 100px;
+}
+#five, #seven{
+    bottom: 40px;
+}
+#one{
+    right: 100px;
+}
+#two{
+    right: 40px;
+}
+#three{
+    right: 10px;
+}
+#four{
+    right: 40px;
+}
+#five{
+    right: 100px;
+}
+#six{
+    bottom: 10px;
+}
+#seven{
+    left: 100px;
+}
+#eight{
+    left: 40px;
+}
+#nine{
+    left: 10px;
+}
+#ten{
+    left: 40px;
+}
+#eleven{
+    left: 100px;
+}
+#twelve{
+    top: 10px;
+}
+
+.digital-clock{
+    margin-top: 20px;
+    background-color: white;
+    height: 100px;
+    width: 200px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.digital-clock > span{
+    margin: 5px;
+}
+#day{
+    color: white;
+    margin: 20px;
+    font-size: 20px;
+}
