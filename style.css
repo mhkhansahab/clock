@@ -104,9 +104,9 @@ html,body{
 
 .digital-clock{
     position: absolute;
-    bottom: 4px;
+    bottom: 10px;
     background-color: white;
-    height: 100px;
+    height: 70px;
     width: 200px;
     border-radius: 20px;
     display: flex;
