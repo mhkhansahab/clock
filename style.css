@@ -1,5 +1,4 @@
-html,body, .main-container{
-    height: 100%;
+html,body{
     background-color: #f03816;
     margin: 0;
 }
@@ -8,6 +7,8 @@ html,body, .main-container{
     color: #f03816;
 }
 .main-container{
+    position: relative;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -41,7 +42,8 @@ html,body, .main-container{
     justify-content: center;
     align-items: center;
     background-color: white;
-    border: 20px solid rgb(223, 63, 45);
+    animation: infinite border-animation 1s;
+    
 }
 .box-shadow-3d{
     box-shadow: 20px 40px 203px -70px rgba(0,0,0,1);
@@ -100,6 +102,8 @@ html,body, .main-container{
 }
 
 .digital-clock{
+    position: absolute;
+    bottom: 4px;
     margin-top: 20px;
     background-color: white;
     height: 100px;
@@ -113,7 +117,116 @@ html,body, .main-container{
     margin: 5px;
 }
 #day{
+    top: 10px;
+    position: absolute;
     color: white;
     margin: 20px;
     font-size: 20px;
+}
+
+
+@media screen and (max-width:512px){
+    .clock{
+        height: 300px;
+        width: 300px;
+    }
+    .digital-clock{
+        bottom: 15px;
+    }
+    #one, #eleven {
+        top: 30px;
+    }
+    #two, #ten{
+        top: 80px;
+    }
+    #four , #eight{
+        bottom: 80px;
+    }
+    #five, #seven{
+        bottom: 30px;
+    }
+    #one, #five{
+        right: 80px;
+    }
+    #two, #four{
+        right: 30px;
+    }
+    #three{
+        right: 10px;
+    }
+    #six{
+        bottom: 10px;
+    }
+    #seven, #eleven{
+        left: 80px;
+    }
+    #eight, #ten{
+        left: 30px;
+    }
+    #nine{
+        left: 10px;
+    }
+    #twelve{
+        top: 10px;
+    }
+    #sec-tick{
+        width: 120px;
+    }
+    #min-tick{
+        width: 100px;
+    }
+    #hour-tick{
+        width: 70px;
+    }
+    
+}
+
+
+@keyframes border-animation {
+    0%{
+        border: 0px solid rgb(223, 63, 45);
+    }
+    7%{
+        border: 2px solid rgb(223, 63, 45);
+    }
+    14%{
+        border: 4px solid rgb(223, 63, 45);
+    }
+    21%{
+        border: 6px solid rgb(223, 63, 45);
+    }
+    28%{
+        border: 8px solid rgb(223, 63, 45);
+    }
+    35%{
+        border: 10px solid rgb(223, 63, 45);
+    }
+    42%{
+        border: 12px solid rgb(223, 63, 45);
+    }
+    49%{
+        border: 14px solid rgb(223, 63, 45);
+    }
+    56%{
+        border: 12px solid rgb(223, 63, 45);
+    }
+    63%{
+        border: 10px solid rgb(223, 63, 45);
+    }
+    70%{
+        border: 8px solid rgb(223, 63, 45);
+    }
+    77%{
+        border: 6px solid rgb(223, 63, 45);
+    }
+    86%{
+        border: 4px solid rgb(223, 63, 45);
+    }
+    93%{
+        border: 2px solid rgb(223, 63, 45);
+    }
+    100%{
+        border: 0px solid rgb(223, 63, 45);
+    }
+  
 }
