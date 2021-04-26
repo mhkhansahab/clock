@@ -8,11 +8,11 @@ html,body{
 }
 .main-container{
     position: relative;
-    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    height: 100vh;
 }
 .tick{
     position: absolute;
@@ -42,6 +42,7 @@ html,body{
     justify-content: center;
     align-items: center;
     background-color: white;
+    border: 14px solid rgb(223, 63, 45);
     animation: infinite border-animation 1s;
     
 }
@@ -104,7 +105,6 @@ html,body{
 .digital-clock{
     position: absolute;
     bottom: 4px;
-    margin-top: 20px;
     background-color: white;
     height: 100px;
     width: 200px;
@@ -129,9 +129,6 @@ html,body{
     .clock{
         height: 300px;
         width: 300px;
-    }
-    .digital-clock{
-        bottom: 15px;
     }
     #one, #eleven {
         top: 30px;
@@ -184,49 +181,49 @@ html,body{
 
 @keyframes border-animation {
     0%{
-        border: 0px solid rgb(223, 63, 45);
-    }
-    7%{
-        border: 2px solid rgb(223, 63, 45);
-    }
-    14%{
-        border: 4px solid rgb(223, 63, 45);
-    }
-    21%{
-        border: 6px solid rgb(223, 63, 45);
-    }
-    28%{
-        border: 8px solid rgb(223, 63, 45);
-    }
-    35%{
-        border: 10px solid rgb(223, 63, 45);
-    }
-    42%{
-        border: 12px solid rgb(223, 63, 45);
-    }
-    49%{
         border: 14px solid rgb(223, 63, 45);
     }
-    56%{
+    7%{
         border: 12px solid rgb(223, 63, 45);
     }
-    63%{
+    14%{
         border: 10px solid rgb(223, 63, 45);
     }
-    70%{
+    21%{
         border: 8px solid rgb(223, 63, 45);
     }
-    77%{
+    28%{
         border: 6px solid rgb(223, 63, 45);
     }
-    86%{
+    35%{
         border: 4px solid rgb(223, 63, 45);
     }
-    93%{
+    42%{
         border: 2px solid rgb(223, 63, 45);
     }
+    49%{
+        border: 2px solid rgb(223, 63, 45);
+    }
+    56%{
+        border: 2px solid rgb(223, 63, 45);
+    }
+    63%{
+        border: 4px solid rgb(223, 63, 45);
+    }
+    70%{
+        border: 6px solid rgb(223, 63, 45);
+    }
+    77%{
+        border: 8px solid rgb(223, 63, 45);
+    }
+    86%{
+        border: 10px solid rgb(223, 63, 45);
+    }
+    93%{
+        border: 12px solid rgb(223, 63, 45);
+    }
     100%{
-        border: 0px solid rgb(223, 63, 45);
+        border: 14px solid rgb(223, 63, 45);
     }
   
 }
