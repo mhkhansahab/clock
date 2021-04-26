@@ -126,12 +126,15 @@ html,body{
 
 
 @media screen and (max-width:512px){
+    .main-container{
+        height: 90vh;
+    }
     .clock{
         height: 300px;
         width: 300px;
     }
     .digital-clock{
-        bottom: 50px;
+        bottom: 20px;
     }
     #one, #eleven {
         top: 30px;
