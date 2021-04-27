@@ -36,14 +36,14 @@ html,body{
 .clock{
     position: relative;
     border-radius: 50%;
+    margin: 20px auto;
     width: 400px;
     height: 400px;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: white;
-    border: 14px solid rgb(223, 63, 45);
-    animation: infinite border-animation 1s;
+    border: 16px solid rgb(223, 63, 45);
     
 }
 .box-shadow-3d{
@@ -103,8 +103,6 @@ html,body{
 }
 
 .digital-clock{
-    position: absolute;
-    bottom: 10px;
     background-color: white;
     height: 70px;
     width: 200px;
@@ -117,8 +115,6 @@ html,body{
     margin: 5px;
 }
 #day{
-    top: 10px;
-    position: absolute;
     color: white;
     margin: 20px;
     font-size: 20px;
@@ -184,52 +180,3 @@ html,body{
     
 }
 
-
-@keyframes border-animation {
-    0%{
-        border: 14px solid rgb(223, 63, 45);
-    }
-    7%{
-        border: 12px solid rgb(223, 63, 45);
-    }
-    14%{
-        border: 10px solid rgb(223, 63, 45);
-    }
-    21%{
-        border: 8px solid rgb(223, 63, 45);
-    }
-    28%{
-        border: 6px solid rgb(223, 63, 45);
-    }
-    35%{
-        border: 4px solid rgb(223, 63, 45);
-    }
-    42%{
-        border: 2px solid rgb(223, 63, 45);
-    }
-    49%{
-        border: 2px solid rgb(223, 63, 45);
-    }
-    56%{
-        border: 2px solid rgb(223, 63, 45);
-    }
-    63%{
-        border: 4px solid rgb(223, 63, 45);
-    }
-    70%{
-        border: 6px solid rgb(223, 63, 45);
-    }
-    77%{
-        border: 8px solid rgb(223, 63, 45);
-    }
-    86%{
-        border: 10px solid rgb(223, 63, 45);
-    }
-    93%{
-        border: 12px solid rgb(223, 63, 45);
-    }
-    100%{
-        border: 14px solid rgb(223, 63, 45);
-    }
-  
-}
